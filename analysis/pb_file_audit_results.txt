@@ -1,0 +1,114 @@
+======================================================================
+PoseBusters file audit summary
+======================================================================
+Total complexes in benchmark dir: 428
+  Missing files:        0
+  Parse failures:       0
+  Atom count mismatch (ligand.sdf vs ligands.sdf[0]):  0
+  Atom count mismatch (ligand.sdf vs start_conf.sdf):  0
+  SMILES mismatch (ligand vs start_conf):  5
+  Displaced ligands (centroid >30Å from Cα center):    29
+  No Cα atoms in protein:  0
+
+--- SMILES mismatches (ligand.sdf vs start_conf.sdf) ---
+  6XHT_V2V
+    ligand:     Nc1ccn([C@@H]2O[C@H](CO[P@](=O)(O)O[P@@](=O)(O)OC[C@@H](O)[C@@H](O)[C@@H](O)CO)[
+    start_conf: Nc1ccn([C@@H]2O[C@H](CO[P@@](=O)(O)O[P@](=O)(O)OC[C@@H](O)[C@@H](O)[C@@H](O)CO)[
+  7B94_ANP
+    ligand:     Nc1ncnc2c1ncn2[C@@H]1O[C@H](CO[P@@](=O)(O)O[P@](=O)(O)NP(=O)(O)O)[C@@H](O)[C@H]1
+    start_conf: Nc1ncnc2c1ncn2[C@@H]1O[C@H](CO[P@@](=O)(O)O[P@@](=O)(O)NP(=O)(O)O)[C@@H](O)[C@H]
+  7D9L_GSF
+    ligand:     N[C@@H](CCC(=O)N[C@@H](C[S@](=O)O)C(=O)NCC(=O)O)C(=O)O
+    start_conf: N[C@@H](CCC(=O)N[C@@H](C[S@@](=O)O)C(=O)NCC(=O)O)C(=O)O
+  8FV9_80J
+    ligand:     Nc1ccn([C@@H]2O[C@H](CO[P@@](=O)(O)O[P@](=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2F)c(=O)
+    start_conf: Nc1ccn([C@@H]2O[C@H](CO[P@](=O)(O)O[P@@](=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2F)c(=O)
+  8G0V_YHT
+    ligand:     C#CCO[P@](=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O
+    start_conf: C#CCO[P@@](=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O
+
+--- Displaced ligands (>30Å from protein Cα centroid) ---
+  8CI0_8EL  dist=65.0Å  [NOT_in_eval]
+  7QE4_NGA  dist=60.5Å  [in_eval]
+  7OP9_06K  dist=54.4Å  [in_eval]
+  7TS6_KMI  dist=49.3Å  [in_eval]
+  7LJN_GTP  dist=46.7Å  [in_eval]
+  8F4J_PHO  dist=46.4Å  [NOT_in_eval]
+  7AVI_S2Q  dist=45.9Å  [NOT_in_eval]
+  6XHT_V2V  dist=45.1Å  [in_eval]
+  7M31_TDR  dist=43.1Å  [NOT_in_eval]
+  6TW5_9M2  dist=39.0Å  [in_eval]
+  7TB0_UD1  dist=38.9Å  [in_eval]
+  7OZ9_NGK  dist=38.7Å  [in_eval]
+  7FRX_O88  dist=38.5Å  [NOT_in_eval]
+  7QSW_CAP  dist=37.7Å  [NOT_in_eval]
+  8G0V_YHT  dist=37.6Å  [in_eval]
+  8FO5_Y4U  dist=37.5Å  [in_eval]
+  7OPG_06N  dist=37.1Å  [in_eval]
+  8FAV_4Y5  dist=36.1Å  [in_eval]
+  7MGY_ZD1  dist=35.9Å  [in_eval]
+  7XJN_NSD  dist=35.9Å  [in_eval]
+  7WY1_D0L  dist=35.0Å  [in_eval]
+  7OU8_1XI  dist=34.5Å  [NOT_in_eval]
+  7ZCC_OGA  dist=33.4Å  [in_eval]
+  7L00_XCJ  dist=33.3Å  [in_eval]
+  7CNQ_G8X  dist=32.8Å  [in_eval]
+  7SNE_9XR  dist=32.6Å  [NOT_in_eval]
+  7WUX_6OI  dist=32.0Å  [in_eval]
+  7R9N_F97  dist=30.9Å  [in_eval]
+  7MFP_Z7P  dist=30.9Å  [in_eval]
+
+--- Complexes with inf RMSD in evaluation results ---
+  7D5C_GV6  n_inf_samples=3/40  top1=0.99  oracle=0.99  n_copies=1
+  7LJN_GTP  n_inf_samples=2/40  top1=4.56  oracle=2.16  n_copies=4
+  7NU0_DCL  n_inf_samples=2/40  top1=22.83  oracle=4.05  n_copies=1
+  7QE4_NGA  n_inf_samples=2/40  top1=35.66  oracle=3.01  n_copies=2
+  8D19_GSH  n_inf_samples=2/40  top1=11.21  oracle=3.82  n_copies=2
+  6T88_MWQ  n_inf_samples=1/40  top1=2.83  oracle=1.88  n_copies=1
+  6YRV_PJ8  n_inf_samples=1/40  top1=17.14  oracle=9.35  n_copies=1
+  6ZAE_ACV  n_inf_samples=1/40  top1=23.64  oracle=5.69  n_copies=1
+  7D6O_MTE  n_inf_samples=1/40  top1=15.99  oracle=12.10  n_copies=2
+  7FHA_ADX  n_inf_samples=1/40  top1=0.75  oracle=0.75  n_copies=2
+  7MGY_ZD1  n_inf_samples=1/40  top1=17.40  oracle=17.38  n_copies=2
+  7UJ5_DGL  n_inf_samples=1/40  top1=22.87  oracle=11.77  n_copies=4
+  7VB8_STL  n_inf_samples=1/40  top1=3.27  oracle=2.35  n_copies=2
+  7WPW_F15  n_inf_samples=1/40  top1=4.91  oracle=4.61  n_copies=1
+  7XJN_NSD  n_inf_samples=1/40  top1=24.50  oracle=13.48  n_copies=4
+  7XRL_FWK  n_inf_samples=1/40  top1=30.70  oracle=5.98  n_copies=2
+  8FO5_Y4U  n_inf_samples=1/40  top1=16.00  oracle=9.09  n_copies=2
+  8GFD_ZHR  n_inf_samples=1/40  top1=17.14  oracle=7.04  n_copies=1
+  8SLG_G5A  n_inf_samples=1/40  top1=2.06  oracle=1.00  n_copies=2
+
+--- All per-complex issues ---
+  6TW5_9M2: DISPLACED dist=39.0Å
+  6XHT_V2V: SMILES MISMATCH ligand vs start_conf; DISPLACED dist=45.1Å
+  7AVI_S2Q: DISPLACED dist=45.9Å
+  7B94_ANP: SMILES MISMATCH ligand vs start_conf
+  7CNQ_G8X: DISPLACED dist=32.8Å
+  7D9L_GSF: SMILES MISMATCH ligand vs start_conf
+  7FRX_O88: DISPLACED dist=38.5Å
+  7L00_XCJ: DISPLACED dist=33.3Å
+  7LJN_GTP: DISPLACED dist=46.7Å
+  7M31_TDR: DISPLACED dist=43.1Å
+  7MFP_Z7P: DISPLACED dist=30.9Å
+  7MGY_ZD1: DISPLACED dist=35.9Å
+  7OP9_06K: DISPLACED dist=54.4Å
+  7OPG_06N: DISPLACED dist=37.1Å
+  7OU8_1XI: DISPLACED dist=34.5Å
+  7OZ9_NGK: DISPLACED dist=38.7Å
+  7QE4_NGA: DISPLACED dist=60.5Å
+  7QSW_CAP: DISPLACED dist=37.7Å
+  7R9N_F97: DISPLACED dist=30.9Å
+  7SNE_9XR: DISPLACED dist=32.6Å
+  7TB0_UD1: DISPLACED dist=38.9Å
+  7TS6_KMI: DISPLACED dist=49.3Å
+  7WUX_6OI: DISPLACED dist=32.0Å
+  7WY1_D0L: DISPLACED dist=35.0Å
+  7XJN_NSD: DISPLACED dist=35.9Å
+  7ZCC_OGA: DISPLACED dist=33.4Å
+  8CI0_8EL: DISPLACED dist=65.0Å
+  8F4J_PHO: DISPLACED dist=46.4Å
+  8FAV_4Y5: DISPLACED dist=36.1Å
+  8FO5_Y4U: DISPLACED dist=37.5Å
+  8FV9_80J: SMILES MISMATCH ligand vs start_conf
+  8G0V_YHT: SMILES MISMATCH ligand vs start_conf; DISPLACED dist=37.6Å
